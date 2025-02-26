@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: url('https://i.pinimg.com/736x/d6/f1/43/d6f143b2a7792b94baa93000dc7d9518.jpg');
+    background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+    padding: 10px;
+}
+.to_do_app{
+    background: aliceblue;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.to_do_app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+/* ✨ Fancy & Bold Title */
+h2 {
+    margin: 15px;
+    font-size: 48px; /* Super big! */
+    font-weight: 900; /* Extra bold */
+    color: #ff1493; /* Hot pink */
+    font-family: "Pacifico", cursive; /* Cute, handwritten font */
+    text-align: center;
+    text-shadow: 4px 4px 12px rgba(255, 20, 147, 0.7), 
+                 0px 0px 20px rgba(255, 182, 193, 0.9);
+    letter-spacing: 2px;
+    animation: sparkle 1.5s infinite alternate;
+  }
+  
+  /* 💎 Soft Glow Effect */
+  @keyframes sparkle {
+    0% { text-shadow: 4px 4px 12px rgba(255, 20, 147, 0.7); }
+    100% { text-shadow: 5px 5px 15px rgba(255, 20, 147, 1); }
+  }
+  
+  /* 🎀 Import the Cute Font */
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  
+input {
+    flex: 1;
+    padding: 15px; /* Increased padding */
+    border: 3px solid #ff3e96;
+    border-radius: 30px; /* More rounded */
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 18px; /* Bigger text */
+    font-weight: bold;
+    color: #ff3e96;
+    text-align: center;
+    box-shadow: 0px 5px 12px rgba(255, 105, 180, 0.4);
+    transition: 0.3s ease-in-out;
+  }
+  input:focus {
+    background: white;
+    border: 3px solid #ff69b4;
+    box-shadow: 0px 8px 18px rgba(255, 105, 180, 0.6);
+    transform: scale(1.05);
+  }
+input[type=text]{
+    padding: 10px 15px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+ul li{
+    padding-top: 25px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    color: #f23571;
+  background: rgba(255, 255, 255, 0.5);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    background-color: rgb(210, 162, 194);
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: rgb(156, 79, 176);
+}
+#add{
+    border-radius: 50px;
+}
+.btn{
+    background: #ff3e96;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0px 3px 8px rgba(255, 105, 180, 0.4);
+}
+.btn:hover{
+    background: #ff1493;
+    transform: scale(1.1);
+}
+li{
+    font-size: 30px;
+}
+#mylist{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+#mylist li {
+    display: flex;
+    justify-content: space-between; /* Push text left & button right */
+    align-items: center;
+    background: #bdebf3;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    width: 100%;
+  }
+#mylist li span {
+    cursor: pointer;
+    font-size: 25px;  /* Increased size */
+    color: #ff3b5b;
+    font-weight: bold;
+    margin-left: 10px; /* Adds spacing from task text */
+    transition: 0.3s;
+}
+#mylist li span:hover{
+    color: red;
+  transform: scale(1.2);
+}
